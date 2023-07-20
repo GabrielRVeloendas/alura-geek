@@ -6,5 +6,5 @@ validacao.forEach(btn => {
 
 function validacaoLogin(event) {
   event.preventDefault();
-  window.location.href = "../adicionar__produto.html";
+  window.location.href = "../produtos.html";
 }

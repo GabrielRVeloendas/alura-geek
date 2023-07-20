@@ -28,32 +28,33 @@
         </div>
     </header>
     <main>
-        <div class="addproduto__container"></div>
-        <div class="addproduto">
-            <h3>Adicionar novo produto</h3>
-            <div class="addproduto__div">
-                <input required class="addproduto__input url" type="url" id="url" placeholder=" ">
-                <label for="url" class="addproduto__label">URL da imagem</label>
+        <form class="container__formulario" data-formulario>
+            <div class="addproduto">
+                <h3>Adicionar novo produto</h3>
+                <div class="addproduto__div">
+                    <input required class="addproduto__input url" type="url" id="url" placeholder=" " data-imageurl>
+                    <label for="url" class="addproduto__label">URL da imagem</label>
+                </div>
+                <div class="addproduto__div">
+                    <input required class="addproduto__input" type="text" id="text" placeholder=" " data-category>
+                    <label for="text" class="addproduto__label">Categoria</label>
+                </div>
+                <div class="addproduto__div">
+                    <input required class="addproduto__input" type="text" id="text" placeholder=" " data-name>
+                    <label for="text" class="addproduto__label">Nome do produto</label>
+                </div>
+                <div class="addproduto__div preco">
+                    <input required class="addproduto__input" type="number" id="number" step="0.01" placeholder=" " data-price>
+                    <label for="number" class="addproduto__label">Preço do Produto</label>
+                </div>
+                <div class="addproduto__div">
+                    <textarea required class="addproduto__textarea" rows="" cols="" maxlength="300" id="mensagem" name="mensagem" placeholder=" " data-description></textarea>
+                    <label required for="mensagem" class="addproduto__label">Descrição do produto</label>
+                </div>
+                <input type="submit" name="submitBtn" class="addproduto__botao" value="Adicionar produto">
+                <!-- <button class="addproduto__botao">Adicionar produto</button> -->
             </div>
-            <div class="addproduto__div">
-                <input required class="addproduto__input" type="text" id="text" placeholder=" ">
-                <label for="text" class="addproduto__label">Categoria</label>
-            </div>
-            <div class="addproduto__div">
-                <input required class="addproduto__input" type="text" id="text" placeholder=" ">
-                <label for="text" class="addproduto__label">Nome do produto</label>
-            </div>
-            <div class="addproduto__div preco">
-                <input required class="addproduto__input" type="number" id="number" step="0.01" placeholder=" ">
-                <label for="number" class="addproduto__label">Preço do Produto</label>
-            </div>
-            <div class="addproduto__div">
-                <textarea required class="addproduto__textarea" rows="" cols="" maxlength="300" id="mensagem" name="mensagem" placeholder=" "></textarea>
-                <label required for="mensagem" class="addproduto__label">Descrição do produto</label>
-            </div>
-            <input type="submit" name="submitBtn" class="addproduto__botao" value="Entrar">
-            <!-- <button class="addproduto__botao">Adicionar produto</button> -->
-        </div>
+        </form>
     </main>
     <div class="contato">
         <div class="contato__centralizado">
@@ -89,6 +90,6 @@
         <h4>Desenvolvido por Gabriel R Veloendas</h4>
         <h4>2023</h4>
     </footer>
-    <script src=""></script>
+    <script src="./App/criarProduto.js" type="module"></script>
 </body>
 </html>
