@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek - Login</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/login.css">
+    <link rel="stylesheet" href="./CSS/contato.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+</head>
+<body>
+    <body>
+        <header>
+            <div class="header__logo">
+                <a href="./index.html"><img src="./Imagens/icons/logo.png" alt="" class="logo__img"></a>
+                <a href="./index.html"><img src="./Imagens/icons/logo texto.png" alt=""></a>
+            </div>
+            <div id="divBusca" class="header__search">
+                <input type="text" id="txtBusca" placeholder="O que deseja encontrar?"/>
+                <img src="./Imagens/icons/search3.png" class="header__search--icon" id="btnBusca" alt="Buscar"/>
+            </div>
+            <div class="header__search--icon2">
+                <img src="./Imagens/icons/search4.png" class="header__search--icon" id="btnBusca" alt="Buscar"/>
+            </div>
+        </header>
+        <main>
+            <div class="login__container"></div>
+            <div class="login">
+                <h3>Iniciar Sessão</h3>
+                <div class="login__div">
+                    <input required class="login__input" type="email" id="email" placeholder=" ">
+                    <label for="email" class="login__label">Escreva seu email</label>
+                </div>
+                <div class="login__div">
+                    <input required class="login__input" type="password" id="password" placeholder=" ">
+                    <label for="password" class="login__label">Escreva sua senha</label>
+                </div>
+                <input type="submit" name="submitBtn" class="login__botao" value="Entrar" data-loginbtn>
+                <!-- <button class="login__botao">Entrar</button> -->
+            </div>
+        </main>
+        <div class="contato">
+            <div class="contato__centralizado">
+                <div class="contato__logo junta">
+                    <img src="./Imagens/icons/logo.png" alt="" class="logo__img">
+                    <img src="./Imagens/icons/logo texto.png" alt="">
+                </div>
+                <div class="contato__links__empresarial junta">
+                    <ul>
+                        <li><a href="">Quem somos nós</a></li>
+                        <li><a href="">Política de privacidade</a></li>
+                        <li><a href="">Programa fidelidade</a></li>
+                        <li><a href="">Nossas lojas</a></li>
+                        <li><a href="">Quero ser franqueado</a></li>
+                        <li><a href="">Anuncie aqui</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="formcontato">
+                <h3>Fale conosco</h3>
+                <div class="formcontato__div">
+                    <input required class="formcontato__input" type="text" id="nome" placeholder=" ">
+                    <label for="nome" class="formcontato__label">Nome</label>
+                </div>
+                <div class="formcontato__div">
+                    <textarea required class="formcontato__textarea" rows="" cols="" maxlength="300" id="mensagem" name="mensagem" placeholder=" "></textarea>
+                    <label required for="mensagem" class="formcontato__label">Mensagem</label>
+                </div>
+                <button class="formcontato__botao">Enviar mensagem</button>
+            </div>
+        </div>
+        <footer class="footer">
+            <h4>Desenvolvido por Gabriel R Veloendas</h4>
+            <h4>2023</h4>
+        </footer>
+        <script src="./App/loginValidacao.js"></script>
+</body>
+</html>
