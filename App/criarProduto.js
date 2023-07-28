@@ -11,7 +11,7 @@ async function criaProduto(evento) {
     const description = document.querySelector("[data-description]").value;
 
     await conectaApi.criaProduto(image, category, name, price, description);
-
+    window.location.href = "../produtos.html"
     
 }
 
