@@ -8,7 +8,7 @@ function constroiCard(imageURL, name, price, id) {
     produto.innerHTML = `
         <img src="${imageURL}" alt="">
         <h3 class="produtos__nome">${name}</h3>
-        <h3 class="produtos__preco">R$ ${price.toFixed(2)}</h3>
+        <h3 class="produtos__preco">R$ ${parseFloat(price)}</h3>
         <a href="./">Ver Produto</a>
     `
     return produto;
@@ -24,7 +24,7 @@ function constroiCardTodos(imageURL, name, price, id) {
                     <img src="./Imagens/icons/caneta.svg" alt="" class="icon caneta">
                 </div>
                 <h3 class="produtos__nome produtos__nome__todos">${name}</h3>
-                <h3 class="produtos__preco">R$ ${price.toFixed(2)}</h3>
+                <h3 class="produtos__preco">R$ ${parseFloat(price)}</h3>
                 <h3 class="produtos__id">#${id}</h3>
             `
     return produto
@@ -56,7 +56,7 @@ async function listaProduto() {
   async function listaTodosProdutos() {
     const listaTodosProdutos = document.querySelector(".todos__lista"); 
     const listaApi = await conectaApi.listaProdutos();
-  
+
     listaApi.forEach((elemento) => {
       const card = constroiCardTodos(elemento.imageURL, elemento.name, elemento.price, elemento.id);
       listaTodosProdutos.appendChild(card);
@@ -64,3 +64,5 @@ async function listaProduto() {
   }
   
   listaTodosProdutos();
+
+

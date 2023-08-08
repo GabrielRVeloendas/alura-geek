@@ -5,7 +5,6 @@ async function listaProdutos() {
     const conexao = await fetch(endpointDaAPI);
     const conexaoConvertida = await conexao.json();
 
-    console.table(conexaoConvertida);
     return conexaoConvertida;
 }
 
